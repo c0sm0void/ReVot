@@ -21,7 +21,9 @@ def start(bot: Bot, update: Update):
         bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
         update (:obj:`telegram.update.Update`): Telegram Api Update Object
     """
-    reply = """*ReVot - Reverse Image Search Bot*
+    reply = """*ReVot - Reverse Image Search Bot (MS AZURE)*
+
+@ReVngx_bot (Currently for testing not active all time, you know it's costly ;p)
 
 *How to use me*
 Send me images or stickers and I will send you direct reverse image search links for IQDB, Google, TinEy, Yandex and Bing.
@@ -30,7 +32,7 @@ Send me images or stickers and I will send you direct reverse image search links
 - /help, /start: show a help message with information about the bot and it's usage.
 
 Thank you for using.
-(Beta tester Minhajul \@-@/ and Abhyuday \0-0/)
+(Beta tester Minhajul (@c0sm0s0) \@-@/ and Abhyuday)
 """
 
     update.message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)

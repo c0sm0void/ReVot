@@ -48,3 +48,4 @@ python run_bot.py
 - Use [Python v3.6](https://www.python.org/downloads/release/python-360/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
 - sudo -H pip install -U pipenv
+- 

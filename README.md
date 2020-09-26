@@ -4,7 +4,7 @@ Reverse Image Search Telegram Bot Using MS Azure
 
 <!-- toc -->
 
-- [How to use me](#how-to-use-me)
+- [How To Use Me??](#how-to-use-me)
 - [Features:](#features)
 - [Commands:](#commands)
   * [Local installation](#local-installation)
@@ -45,4 +45,5 @@ Finally you can use this to start your bot.
 ```bash
 python run_bot.py
 ```
-##Errors and Fixes
+## Errors and Fixes
+

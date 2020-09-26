@@ -8,6 +8,7 @@ Reverse Image Search Telegram Bot Using MS Azure
 - [Features:](#features)
 - [Commands:](#commands)
   * [Local installation](#local-installation)
+- [Errors and Fixes](#error)
 
 <!-- tocstop -->
 
@@ -35,6 +36,7 @@ pipenv --three      # Create virtualeenv from your python3 installation
 pipenv install      # Install all requirements
 pipenv shell        # Spawn shell for your pipenv virtualenv
 ```
+Use [Python v3.6](https://www.python.org/downloads/release/python-360/) as default
 
 You have to get an API Token from Telegram. You can easily get one via the [@BotFather](https://t.me/BotFather).
 
@@ -43,3 +45,4 @@ Finally you can use this to start your bot.
 ```bash
 python run_bot.py
 ```
+##Errors and Fixes

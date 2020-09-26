@@ -1,6 +1,6 @@
 # ReVot
 Reverse Image Search Telegram Bot Using MS Azure
-@ReVngx_bot
+[@ReVngx_bot](https://t.me/ReVngx_bot)
 
 <!-- toc -->
 

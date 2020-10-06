@@ -9,7 +9,7 @@ Reverse Image Search Telegram Bot Using MS Azure
 
 <!-- toc -->
 
-- [How To Use Me??](#how-to-use-me)
+- [How To Use Me?](#how-to-use-me)
 - [Features:](#features)
 - [Commands:](#commands)
   * [Local installation](#local-installation)
@@ -17,7 +17,7 @@ Reverse Image Search Telegram Bot Using MS Azure
 
 <!-- tocstop -->
 
-## How To Use Me??❓
+## How To Use Me❓
 Send me images, video(gif) or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
 Bing. For anime images IQDB and TinEye, for other images I recommend to use Google, Bing and Yandex.
 

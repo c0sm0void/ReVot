@@ -1,10 +1,11 @@
 # ReVot🤖 
 Reverse Image Search Telegram Bot Using MS Azure
 [@ReVngx_bot](https://t.me/ReVngx_bot)
+
 ![](https://badgen.net/badge/icon/azure?icon=azure&label)
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
 ![](https://badgen.net/badge/icon/terminal?icon=terminal&label)
-![](https://badgen.net/gitlab/stars/c0sm0void/ReVot)
+![](https://badgen.net/badge/icon/telegram?icon=telegram&label)
 
 <!-- toc -->
 

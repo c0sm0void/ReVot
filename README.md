@@ -1,6 +1,10 @@
-# ReVot
+# ReVot🤖 
 Reverse Image Search Telegram Bot Using MS Azure
 [@ReVngx_bot](https://t.me/ReVngx_bot)
+![](https://badgen.net/badge/icon/azure?icon=azure&label)
+![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
+![](https://badgen.net/badge/icon/terminal?icon=terminal&label)
+![](https://badgen.net/gitlab/stars/c0sm0void/ReVot)
 
 <!-- toc -->
 
@@ -12,23 +16,23 @@ Reverse Image Search Telegram Bot Using MS Azure
 
 <!-- tocstop -->
 
-## How To Use Me??
+## How To Use Me??❓
 Send me images, video(gif) or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
 Bing. For anime images IQDB and TinEye, for other images I recommend to use Google, Bing and Yandex.
 
-## Features:
+## Features:✨
 - Give you image reverse search links
 - Supports normal images like JPG, PNG, WEBP
 - Supports stickers
 - Supports GIFs (can take some time till the GIFs are ready)
 - Supports Videos (will be searched as GIFs)
 
-## Commands:
+## Commands:🧩
 - /help, /start: show a help message with information about the bot and it's usage.
 - /best_match URL: Search for the best match on TinEye (and IQDB when nothing is found on TinEye). The `URL` is a link
     to an image
 
-### Local installation
+### Local installation💻
 With this info we now install our virtualenv with:
 ```bash
 pip install pipenv  # Install pipenv
@@ -44,8 +48,7 @@ Finally you can use this to start your bot.
 ```bash
 python run_bot.py
 ```
-## Errors and Fixes
+## Errors and Fixes❌
 - Use [Python v3.6](https://www.python.org/downloads/release/python-360/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
 - sudo -H pip install -U pipenv
-- 

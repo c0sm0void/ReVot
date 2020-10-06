@@ -9,11 +9,11 @@ Reverse Image Search Telegram Bot Using MS Azure
 
 <!-- toc -->
 
-- [How To Use Me?](#how-to-use-me)
-- [Features:](#features)
-- [Commands:](#commands)
-  * [Local installation](#local-installation)
-- [Errors and Fixes](#errors-and-fixes)
+- [How To Use Me❓](#how-to-use-me)
+- [Features:✨](#features)
+- [Commands:🧩](#commands)
+  * [Local installation💻](#local-installation)
+- [Errors and Fixes❌](#errors-and-fixes)
 
 <!-- tocstop -->
 

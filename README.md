@@ -19,7 +19,7 @@ Reverse Image Search Telegram Bot Using MS Azure (server maybe off)
 <!-- tocstop -->
 
 ## How To Use Me❓
-Send me images, video(gif) or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
+Send me images, gif or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
 Bing. For anime images IQDB and TinEye, for other images I recommend to use Google, Bing and Yandex.
 
 ## Features:✨
@@ -27,7 +27,6 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
 - Supports normal images like JPG, PNG, WEBP
 - Supports stickers
 - Supports GIFs (can take some time till the GIFs are ready)
-- Supports Videos (will be searched as GIFs)
 
 ## Commands:🧩
 - /help, /start: show a help message with information about the bot and it's usage.

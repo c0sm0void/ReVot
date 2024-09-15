@@ -47,7 +47,7 @@ def main():
 
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("help", start))
-    dispatcher.add_handler(CommandHandler('restart', restart, filters=Filters.user(username='@c0sm0s0')))
+    dispatcher.add_handler(CommandHandler('restart', restart, filters=Filters.user(username='@<>')))
     dispatcher.add_handler(CommandHandler('reply_search', group_image_reply_search))
     dispatcher.add_handler(CommandHandler('best_match', best_match, pass_args=True))
     dispatcher.add_handler(CallbackQueryHandler(callback_best_match))

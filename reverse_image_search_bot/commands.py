@@ -32,7 +32,7 @@ Send me images or stickers and I will send you direct reverse image search links
 - /help, /start: show a help message with information about the bot and it's usage.
 
 Thank you for using.
-(Beta tester Minhajul (@c0sm0s0) \@-@/ and Abhyuday)
+(cosmos)
 """
 
     update.message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)

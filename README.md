@@ -7,6 +7,7 @@ Reverse Image Search Telegram Bot Using MS Azure (server maybe off)
 ![](https://badgen.net/badge/icon/terminal?icon=terminal&label)
 ![](https://badgen.net/badge/icon/telegram?icon=telegram&label)
 ![](https://badgen.net/badge/icon/pypi?icon=pypi&label)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <!-- toc -->
 

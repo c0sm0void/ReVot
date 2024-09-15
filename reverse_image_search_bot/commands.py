@@ -23,7 +23,7 @@ def start(bot: Bot, update: Update):
     """
     reply = """*ReVot - Reverse Image Search Bot (MS AZURE)*
 
-@ReVngx_bot (Currently for testing not active all time, you know it's costly ;p)
+(Currently for testing not active all time, you know it's costly ;p)
 
 *How to use me*
 Send me images or stickers and I will send you direct reverse image search links for IQDB, Google, TinEy, Yandex and Bing.

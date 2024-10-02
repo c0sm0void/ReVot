@@ -18,7 +18,7 @@ We welcome pull requests from everyone. Here are some guidelines to follow:
 
 1. **Fork the repository** and clone it to your local machine.
    ```sh
-   git clone https://github.com/c0sm0void/ReVot.git
+   git clone https://github.com/<username_of_contributer>/ReVot.git
    cd ReVot
    ```
 

@@ -15,10 +15,14 @@
             "python_full_version": "3.6.3",
             "python_version": "3.6",
             "sys_platform": "linux"
+            
+}
         },
+
+        "asn1crypto": { "version": "*" }
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.12"
         },
         "sources": [
             {

@@ -199,7 +199,7 @@ def best_match(bot: Bot, update: Update, args: list):
     iqdb.search_url = args[0]
 
     chat_id = update.effective_chat.id
-    message = bot.send_message(chat_id, 'Searching for best match on TinEye...')
+    message = bot.send_message(chat_id, f'Searching for best match on TinEye...')
 
     match = tineye.best_match
     if not match:
@@ -211,13 +211,9 @@ def best_match(bot: Bot, update: Update, args: list):
         match = iqdb.best_match
 
     if match:
-        reply = (
-            'Best Match:\n'
-            'Link: [{website_name}]({website})\n'.format(
-                website_name=match['website_name'],
-                website=match['website'],
-            )
-        )
+        reply = ( f'Best Match:\n' 
+                 f'Link: [{match["website_name"]}]({match["website"]})\n')
+
         reply += dict_to_str(match, ignore=['website_name', 'website', 'image_url', 'thumbnail'])
 
         image_url = match.get('image_url', None) or match.get('website', None)

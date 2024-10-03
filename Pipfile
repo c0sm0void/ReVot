@@ -1,25 +1,41 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [packages]
-#updated packages
-
-python-telegram-bot = "*"
-"bs4" = "*"
-requests = "*"
-pillow = "*"
-paramiko = "*"
-moviepy = "*"
-
+anyio = "==4.6.0"
+bcrypt = "==4.2.0"
+beautifulsoup4 = "==4.12.3"
+bs4 = "==0.0.2"
+certifi = "==2024.8.30"
+cffi = "==1.17.1"
+charset-normalizer = "==3.3.2"
+colorama = "==0.4.6"
+cryptography = "==43.0.1"
+decorator = "==4.4.2"
+h11 = "==0.14.0"
+httpcore = "==1.0.6"
+httpx = "==0.27.2"
+idna = "==3.10"
+imageio = "==2.35.1"
+imageio-ffmpeg = "==0.5.1"
+moviepy = "==1.0.3"
+numpy = "==2.1.1"
+paramiko = "==3.5.0"
+pillow = "==10.4.0"
+proglog = "==0.1.10"
+pycparser = "==2.22"
+pynacl = "==1.5.0"
+python-telegram-bot = "==21.6"
+requests = "==2.32.3"
+setuptools = "==75.1.0"
+sniffio = "==1.3.1"
+soupsieve = "==2.6"
+tqdm = "==4.66.5"
+urllib3 = "==2.2.3"
 
 [dev-packages]
 
-
-
 [requires]
-
-python_version = "3.6"
+python_version = "3.12"

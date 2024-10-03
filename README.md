@@ -106,54 +106,8 @@ ReVot/
 ├── README.md                 # Main project documentation
 └── run_bot.py                # Script to run the bot
 
-```
-
-# How to Contribute 🌍
-We welcome contributions from the community! Here's how you can contribute:
-
-1. **Fork the Repository**: Click on the "Fork" button at the top of this repository.
-
-2. **Clone Your Fork**: Clone your forked repo to your local machine.
-   ```bash
-   git clone https://github.com/your-username/ReVot.git
-   cd ReVot
-   ```
-
-3. **Create a Branch**: Create a new branch for your feature or bug fix.
-   ```bash
-   git checkout -b feature-name
-   ```
-
-4. **Make Changes**: Implement your changes and commit them.
-   ```bash
-   git add .
-   git commit -m "Add a detailed description of your changes"
-   ```
-
-5. **Push to Your Fork**:
-   ```bash
-   git push origin feature-name
-   ```
-
-6. **Submit a Pull Request**: Go to the original repository and submit a PR from your fork.
-
-We will review your submission and provide feedback.
-
-# Contribution Guidelines 📝
-To maintain the quality and consistency of the project, please adhere to the following guidelines:
-
-1. **Code Style**: Follow PEP 8 for Python code formatting.
-
-2. **Testing**: Ensure that all new features are covered by unit tests. Use the `tests/` folder to add new tests.
-
-3. **Commit Messages**: Use clear and descriptive commit messages. Format your commit messages according to the following convention:
-   - `feat`: for new features
-   - `fix`: for bug fixes
-   - `docs`: for documentation updates
-   - `test`: for testing-related changes
-
-4. **Pull Requests**: Ensure that your branch is up-to-date with the latest changes from the main branch before submitting a PR. Clearly describe your changes in the pull request.
 
 
 ### License 📜
-This project is licensed under the MIT License. You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.

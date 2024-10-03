@@ -7,22 +7,29 @@ from telegram import Bot, TelegramError, Update
 from telegram.ext import CallbackQueryHandler, CommandHandler, Filters, MessageHandler, Updater
 
 from . import settings
-from .commands import best_match, callback_best_match, gif_image_search, group_image_reply_search, image_search_link, \
-    start, sticker_image_search, unknown
+from .commands import (
+    best_match,
+    callback_best_match,
+    gif_image_search,
+    group_image_reply_search,
+    image_search_link,
+    start,
+    sticker_image_search,
+    unknown,
+)
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def error(bot: Bot, update: Update, error: TelegramError):
-    """Log all errors from the telegram bot api
+def error(update: Update, context):
+    """Log all errors from the telegram bot API
 
     Args:
-        bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
-        update (:obj:`telegram.update.Update`): Telegram Api Update Object
-        error (:obj:`telegram.error.TelegramError`): Telegram Api TelegramError Object
+        update (:obj:`telegram.update.Update`): Telegram API Update Object
+        context (:obj:`telegram.ext.CallbackContext`): Telegram API CallbackContext Object
     """
-    logger.warning('Update "%s" caused error "%s"' % (update, error))
+    logger.warning('Update "%s" caused error "%s"', update, context.error)
 
 
 def main():
@@ -34,12 +41,12 @@ def main():
         updater.stop()
         os.execl(sys.executable, sys.executable, *sys.argv)
 
-    def restart(bot: Bot, update: Update):
+    def restart(update: Update, context):
         """Start the restarting process
 
         Args:
-            bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
-            update (:obj:`telegram.update.Update`): Telegram Api Update Object
+            update (:obj:`telegram.update.Update`): Telegram API Update Object
+            context (:obj:`telegram.ext.CallbackContext`): Telegram API CallbackContext Object
         """
         update.message.reply_text('Bot is restarting...')
         logger.info('Gracefully restarting...')

@@ -1,5 +1,6 @@
 # ReVot🤖 
-Reverse Image Search Telegram Bot Using MS Azure (server maybe off)
+Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
+Bot: [ReVot](https://t.me/ReVot_Local_Bot)
 
 ![](https://badgen.net/badge/icon/azure?icon=azure&label)
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
@@ -13,7 +14,7 @@ Reverse Image Search Telegram Bot Using MS Azure (server maybe off)
 - [How To Use Me❓](#how-to-use-me)
 - [Features:✨](#features)
 - [Commands:🧩](#commands)
-  * [Local installation💻](#local-installation)
+- [Local installation💻](#local-installation)
 - [Errors and Fixes❌](#errors-and-fixes)
 
 <!-- tocstop -->
@@ -34,12 +35,13 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
     to an image
 
 ### Local installation💻
-With this info we now install our virtualenv with:
+With this info we now install our virtualenv with (check pre-installations file):
 ```bash
 pip install pipenv  # Install pipenv
-pipenv --three      # Create virtualeenv from your python3 installation
+pipenv --version
+git clone https://github.com/c0sm0void/ReVot.git
+cd /ReVot
 pipenv install      # Install all requirements
-pipenv shell        # Spawn shell for your pipenv virtualenv
 ```
 
 You have to get an API Token from Telegram. You can easily get one via the [@BotFather](https://t.me/BotFather).
@@ -50,6 +52,60 @@ Finally you can use this to start your bot.
 python run_bot.py
 ```
 ## Errors and Fixes❌
-- Use [Python v3.6](https://www.python.org/downloads/release/python-360/) as default
+- Use [Python v3.12](https://www.python.org/downloads/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
 - sudo -H pip install -U pipenv
+
+## Techstack
+# Programming Language: 
+  -Python 3.6+
+# Libraries:
+  -pipenv: For virtual environment and dependency management
+  -python-telegram-bot: For interacting with Telegram APIs
+  -Reverse Image Search Engines:
+    -Google
+    -Bing
+    -Yandex
+    -TinEye
+    -IQDB
+# Platform:
+  -MS Azure for hosting
+
+### Repository Structure 📂
+
+```plaintext
+ReVot/
+│
+├── .github/                  # GitHub-specific files
+│   └── ISSUE_TEMPLATE/
+│       ├── bug_report.md     # Template for reporting bugs
+│       ├── custom.md         # Custom issue template
+│       └── feature_request.md # Template for requesting features
+│
+├── deploy/                   # Deployment scripts and configurations
+│   ├── after_push            # Post-deployment scripts
+│
+├── reverse_image_search_bot/ # Main bot directory
+│   ├── uploaders/            # Uploader modules
+│   │   ├── __init__.py       # Initialize uploaders package
+│   │   ├── base_uploader.py   # Base class for uploaders
+│   │   ├── file_system.py     # File system operations
+│   │   └── ssh.py            # SSH related functions
+│   │
+│   ├── __init__.py           # Initialize bot package
+│   ├── bot.py                # Main bot logic
+│   ├── commands.py           # Command handling for the bot
+│   ├── image_search.py       # Functions for reverse image search
+│   ├── settings.example.py    # Example settings file for API tokens
+│   ├── settings.example1.py   # Another example settings file
+│   ├── utils.py              # Utility functions and helpers
+│
+├── LICENSE                   # License information
+├── Pipfile                   # Pipenv dependencies
+├── Pipfile.lock              # Locked dependency versions
+├── README.md                 # Main project documentation
+└── run_bot.py                # Script to run the bot
+
+### License 📜
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.

@@ -1,8 +1,8 @@
-TELEGRAM_API_TOKEN = '7737944585:AAE88ao4k3bmTkxb0hl4V0YfChtmujqx8rE'
+TELEGRAM_API_TOKEN = 'Tel Bot Token By @BotFather'
 
 UPLOADER = {
     'uploader': 'reverse_image_search_bot.uploaders.file_system.FileSystemUploader',
-    'url': 'myguest.virtualbox.org',
+    'url': 'Host Domain Name',
     'configuration': {
        'path': '/path/to/ReVot/',
     }

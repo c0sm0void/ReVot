@@ -35,7 +35,7 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
     to an image
 
 ### Local installation💻
-With this info we now install our virtualenv with (check pre-requisite file):
+With this info we now install our virtualenv with (check pre-installations file):
 ```bash
 pip install pipenv  # Install pipenv
 pipenv --version

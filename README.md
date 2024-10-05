@@ -1,5 +1,6 @@
 # ReVot🤖 
-Reverse Image Search Telegram Bot Using MS Azure (server maybe off)
+Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
+Bot: [ReVot](https://t.me/ReVot_Local_Bot)
 
 ![](https://badgen.net/badge/icon/azure?icon=azure&label)
 ![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
@@ -34,12 +35,13 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
     to an image
 
 ### Local installation💻
-With this info we now install our virtualenv with:
+With this info we now install our virtualenv with (check pre-installations file):
 ```bash
 pip install pipenv  # Install pipenv
-pipenv --three      # Create virtualeenv from your python3 installation
+pipenv --version
+git clone https://github.com/c0sm0void/ReVot.git
+cd /ReVot
 pipenv install      # Install all requirements
-pipenv shell        # Spawn shell for your pipenv virtualenv
 ```
 
 You have to get an API Token from Telegram. You can easily get one via the [@BotFather](https://t.me/BotFather).
@@ -50,7 +52,7 @@ Finally you can use this to start your bot.
 python run_bot.py
 ```
 ## Errors and Fixes❌
-- Use [Python v3.6](https://www.python.org/downloads/release/python-360/) as default
+- Use [Python v3.12](https://www.python.org/downloads/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
 - sudo -H pip install -U pipenv
 
@@ -68,8 +70,6 @@ python run_bot.py
     -IQDB
 # Platform:
   -MS Azure for hosting
-# Databases:
-  -SQLite (for user-specific data like search history, preferences)
 
 ### Repository Structure 📂
 
@@ -105,8 +105,6 @@ ReVot/
 ├── Pipfile.lock              # Locked dependency versions
 ├── README.md                 # Main project documentation
 └── run_bot.py                # Script to run the bot
-
-
 
 ### License 📜
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).

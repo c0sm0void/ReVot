@@ -3,9 +3,12 @@ import os
 import sys
 from threading import Thread
 
-from telegram import Bot, TelegramError, Update
-from telegram.ext import CallbackQueryHandler, CommandHandler, Filters, MessageHandler, Updater
+from telegram import Bot, Update, ForceReply
+from telegram.error import TelegramError
+from telegram.ext import Application, CallbackQueryHandler, CommandHandler, filters, MessageHandler
+from telegram.constants import MessageType
 
+from queue import Queue
 from . import settings
 from .commands import best_match, callback_best_match, gif_image_search, group_image_reply_search, image_search_link, \
     start, sticker_image_search, unknown
@@ -14,55 +17,63 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 
-def error(bot: Bot, update: Update, error: TelegramError):
+def has_photo(update: Update) -> bool:
+    return update.message.photo is not None
+
+
+def has_video_or_document(update: Update) -> bool:
+    return update.message.video is not None or update.message.document is not None
+
+
+def error(application: Application, context, error: TelegramError):
     """Log all errors from the telegram bot api
 
     Args:
-        bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
-        update (:obj:`telegram.update.Update`): Telegram Api Update Object
+        application (:obj:`telegram.Application`): Telegram Api Application Object.
+        context (:obj:`telegram.ext.CallbackContext`): Telegram Api CallbackContext Object
         error (:obj:`telegram.error.TelegramError`): Telegram Api TelegramError Object
     """
-    logger.warning('Update "%s" caused error "%s"' % (update, error))
+    logger.warning('Update "%s" caused error "%s"' % (context.update, error))
 
 
 def main():
-    updater = Updater(settings.TELEGRAM_API_TOKEN)
-    dispatcher = updater.dispatcher
+    application = Application.builder().token(settings.TELEGRAM_API_TOKEN).build()
 
     def stop_and_restart():
-        """Gracefully stop the Updater and replace the current process with a new one."""
-        updater.stop()
+        """Gracefully stop the Application and replace the current process with a new one."""
+        application.stop()
         os.execl(sys.executable, sys.executable, *sys.argv)
 
-    def restart(bot: Bot, update: Update):
+    def restart(update: Update, context):
         """Start the restarting process
 
         Args:
-            bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
             update (:obj:`telegram.update.Update`): Telegram Api Update Object
+            context (:obj:`telegram.ext.CallbackContext`): Telegram Api CallbackContext Object
         """
         update.message.reply_text('Bot is restarting...')
         logger.info('Gracefully restarting...')
         Thread(target=stop_and_restart).start()
 
-    dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(CommandHandler("help", start))
-    dispatcher.add_handler(CommandHandler('restart', restart, filters=Filters.user(username='@<>')))
-    dispatcher.add_handler(CommandHandler('reply_search', group_image_reply_search))
-    dispatcher.add_handler(CommandHandler('best_match', best_match, pass_args=True))
-    dispatcher.add_handler(CallbackQueryHandler(callback_best_match))
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(CommandHandler("help", start))
+    application.add_handler(CommandHandler('restart', restart, filters=filters.User(username='@<>')))
+    application.add_handler(CommandHandler('reply_search', group_image_reply_search))
+    application.add_handler(CommandHandler('best_match', best_match))
+    application.add_handler(CallbackQueryHandler(callback_best_match))
 
-    dispatcher.add_handler(MessageHandler(Filters.sticker, sticker_image_search))
-    dispatcher.add_handler(MessageHandler(Filters.photo, image_search_link))
-    dispatcher.add_handler(MessageHandler(Filters.video | Filters.document, gif_image_search))
-    dispatcher.add_handler(MessageHandler(Filters.command, unknown))
+    application.add_handler(MessageHandler(filters.PHOTO, image_search_link))
+    application.add_handler(MessageHandler(filters.VIDEO, gif_image_search))
+    application.add_handler(MessageHandler(filters.Document, gif_image_search))
+    application.add_handler(MessageHandler(filters.Sticker, sticker_image_search))
+    application.add_handler(MessageHandler(filters.COMMAND, unknown))
 
     # log all errors
-    dispatcher.add_error_handler(error)
+    application.add_error_handler(error)
 
-    updater.start_polling()
+    application.run_polling()
     logger.info('Started bot. Waiting for requests...')
-    updater.idle()
+    application.idle()
 
 
 if __name__ == '__main__':

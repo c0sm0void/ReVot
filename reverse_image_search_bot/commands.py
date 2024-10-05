@@ -5,8 +5,11 @@ from uuid import uuid4
 
 from PIL import Image
 from moviepy.video.io.VideoFileClip import VideoFileClip
-from telegram import Bot, ChatAction, InlineKeyboardButton, InlineKeyboardMarkup, Update
-from telegram.parsemode import ParseMode
+
+from telegram.constants import ParseMode
+from telegram import Bot, InlineKeyboardButton, InlineKeyboardMarkup, Update
+from telegram.constants import ChatAction
+from telegram.ext import CallbackContext
 
 from reverse_image_search_bot.utils import dict_to_str
 from .image_search import BingReverseImageSearchEngine, \
@@ -14,12 +17,12 @@ from .image_search import BingReverseImageSearchEngine, \
     TinEyeReverseImageSearchEngine, YandexReverseImageSearchEngine
 
 
-def start(bot: Bot, update: Update):
+async def start(update: Update, context: CallbackContext):
     """Send Start / Help message to client.
 
     Args:
-        bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
         update (:obj:`telegram.update.Update`): Telegram Api Update Object
+        context (:obj:`telegram.ext.CallbackContext`): Telegram Api Callback Context Object
     """
     reply = """*ReVot - Reverse Image Search Bot (MS AZURE)*
 
@@ -35,11 +38,15 @@ Thank you for using.
 (cosmos)
 """
 
-    update.message.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text=reply, parse_mode=ParseMode.MARKDOWN)
 
     current_dir = os.path.dirname(os.path.realpath(__file__))
     image_dir = os.path.join(current_dir, 'images/example_usage.png')
-    bot.send_photo(update.message.chat_id, photo=open(image_dir, 'rb'), caption='Example Usage')
+
+    if os.path.exists(image_dir):
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo=open(image_dir, 'rb'), caption='Example Usage')
+    else:
+        await context.bot.send_message(chat_id=update.effective_chat.id, text='Example image not found.')
 
 
 def group_image_reply_search(bot: Bot, update: Update):
@@ -106,21 +113,29 @@ def sticker_image_search(bot: Bot, update: Update):
             general_image_search(bot, update, converted_image, 'png')
 
 
-def image_search_link(bot: Bot, update: Update):
+async def image_search_link(update: Update, context: CallbackContext):
     """Send a reverse image search link for the image he sent us to the client
 
     Args:
-        bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
         update (:obj:`telegram.update.Update`): Telegram Api Update Object
+        context (:obj:`telegram.ext.CallbackContext`): Telegram Api Callback Context Object
     """
-    update.message.reply_text('Please wait for your results ...')
-    bot.send_chat_action(chat_id=update.message.chat_id, action=ChatAction.TYPING)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text='Please wait for your results ...')
 
-    photo = bot.getFile(update.message.photo[-1].file_id)
-    with io.BytesIO() as image_buffer:
-        photo.download(out=image_buffer)
-        with io.BufferedReader(image_buffer) as image_file:
-            general_image_search(bot, update, image_file)
+    if update.effective_message.photo:
+        photo = update.effective_message.photo[-1]
+    elif update.effective_message.document:
+        photo = update.effective_message.document
+    else:
+        await context.bot.send_message(chat_id=update.effective_chat.id, text='No image found.')
+        return
+
+    file = await photo.get_file()
+    image_buffer = io.BytesIO()
+    await file.download_to_memory(destination=image_buffer)
+    image_buffer.seek(0)
+    with io.BufferedReader(image_buffer) as image_file:
+        await general_image_search(context.bot, update, image_file)
 
 
 def general_image_search(bot: Bot, update: Update, image_file, image_extension: str=None):

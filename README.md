@@ -118,3 +118,18 @@ Big thanks to all the contributors! 🎉
 ## License 📜
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
+=======
+
+```
+
+## 👀 Our Contributors
+
+- We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating Ratna-Supermarket to greater heights.
+- Make sure you show some love by giving ⭐ to our repository.
+
+<div align="center">
+
+  <a href="https://github.com/c0sm0void/ReVot">
+    <img src="https://contrib.rocks/image?repo=c0sm0void/ReVot&&max=1000" />
+  </a>
+</div>

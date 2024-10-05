@@ -105,7 +105,16 @@ ReVot/
 ├── Pipfile.lock              # Locked dependency versions
 ├── README.md                 # Main project documentation
 └── run_bot.py                # Script to run the bot
+```
 
-### License 📜
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Contributors
+
+Big thanks to all the contributors! 🎉
+
+<a href="https://github.com/c0sm0void/ReVot/pulse"> <img align="center" src="https://contrib.rocks/image?max=100&repo=c0sm0void/ReVot" /> </a> 
+
+<br>
+
+## License 📜
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.

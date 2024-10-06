@@ -128,11 +128,9 @@ You are free to use, modify, and distribute this software as long as the origina
 - Make sure you show some love by giving ⭐ to our repository.
 
 <div align="center">
-
-  <a href="https://github.com/c0sm0void/ReVot">
-    <br><img src ="https://github.com/c0sm0void/ReVot/graphs/contributors"><br>
-        <img src="https://contrib.rocks/image?repo=c0sm0void/ReVot&&max=100&&anon=1" />
-  </a>
+<a href="https://github.com/c0sm0void/ReVot/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=c0sm0void/ReVot&&max=100&&anon=1" />
+</a>
 </div>
 
 <!-- Made with [OSS Insight](https://ossinsight.io/) -->

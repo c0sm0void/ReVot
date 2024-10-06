@@ -122,7 +122,7 @@ ReVot/
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
 
-## 👀 Our Contributors
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Our Contributors
 
 - We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating ReVot to greater heights.
 - Make sure you show some love by giving ⭐ to our repository.
@@ -164,4 +164,3 @@ You are free to use, modify, and distribute this software as long as the origina
     </td>
   </tr>
 </table>
-

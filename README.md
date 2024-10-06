@@ -1,13 +1,33 @@
-# ReVot🤖 
-Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
-Bot: [ReVot](https://t.me/ReVot_Local_Bot)
+<div align="center">
+  <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot🤖</strong></h1>
+  <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
+Bot: <a href="https://t.me/ReVot_Local_Bot">ReVot</a>
+  <p>
+    <img src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=social"/>
+    <img src="https://img.shields.io/github/forks/c0sm0void/ReVot?style=social"/>
+    <img src="https://img.shields.io/github/watchers/c0sm0void/ReVot?style=social"/>
+  <p>
+    <a href="https://github.com/c0sm0void/ReVot/issues"><img src="https://custom-icon-badges.demolab.com/github/issues/c0sm0void/ReVot?label=Issues&labelColor=302d41&color=FF6347&logoColor=FF6347&logo=issue&style=for-the-badge" alt="GitHub Readme Profile Issues"/></a>
+    <a href="https://github.com/c0sm0void/ReVot/pull"><img src="https://custom-icon-badges.demolab.com/github/issues-pr/c0sm0void/ReVot?&label=Pull%20requests&labelColor=302d41&color=98FF98&logoColor=98FF98&logo=git-pull-request&style=for-the-badge" alt="GitHub Readme Profile PRs"/></a>
+    <a href="https://github.com/c0sm0void/ReVot/graphs/contributors"><img src="https://custom-icon-badges.demolab.com/github/contributors/c0sm0void/ReVot?label=Contributors&labelColor=302d41&color=c9cbff&logoColor=d9e0ee&logo=people&style=for-the-badge"/></a>
+    <a href="https://t.me/c0sm0void"><img src="https://img.shields.io/badge/Contact%20via%20Telegram-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/></a>
+  <p>
+    <img src="http://forthebadge.com/images/badges/made-with-python.svg"/>
+    <img src="http://forthebadge.com/images/badges/license-mit.svg"/>
+  <p>
+    <img src="https://badgen.net/badge/icon/azure?icon=azure&label">
+    <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">
+    <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label">
+    <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
+</div>
 
-![](https://badgen.net/badge/icon/azure?icon=azure&label)
-![](https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a)
-![](https://badgen.net/badge/icon/terminal?icon=terminal&label)
-![](https://badgen.net/badge/icon/telegram?icon=telegram&label)
-![](https://badgen.net/badge/icon/pypi?icon=pypi&label)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+----
+
+### :zap: Recent Activity
+
+<!--START_SECTION:activity-->
+
+---
 
 <!-- toc -->
 
@@ -34,7 +54,7 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
 - /best_match URL: Search for the best match on TinEye (and IQDB when nothing is found on TinEye). The `URL` is a link
     to an image
 
-### Local installation💻
+## Local installation💻
 With this info we now install our virtualenv with (check pre-installations file):
 ```bash
 pip install pipenv  # Install pipenv
@@ -58,19 +78,19 @@ python run_bot.py
 - sudo -H pip install -U pipenv
 
 ## Techstack
-# Programming Language: 
-  -Python 3.6+
-# Libraries:
-  -pipenv: For virtual environment and dependency management
-  -python-telegram-bot: For interacting with Telegram APIs
-  -Reverse Image Search Engines:
-    -Google
-    -Bing
-    -Yandex
-    -TinEye
-    -IQDB
-# Platform:
-  -MS Azure for hosting
+### Programming Language: 
+  - Python 3.12+
+### Libraries:
+  - pipenv: For virtual environment and dependency management
+  - python-telegram-bot: For interacting with Telegram APIs
+  - Reverse Image Search Engines:
+    - Google
+    - Bing
+    - Yandex
+    - TinEye
+    - IQDB
+### Platform:
+  - MS Azure for hosting
 
 ### Repository Structure 📂
 
@@ -106,21 +126,45 @@ ReVot/
 ├── Pipfile.lock              # Locked dependency versions
 ├── README.md                 # Main project documentation
 └── run_bot.py                # Script to run the bot
+```
 
-### License 📜
+## License 📜
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
 
-```
-
 ## 👀 Our Contributors
 
-- We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating Ratna-Supermarket to greater heights.
+- We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating ReVot to greater heights.
 - Make sure you show some love by giving ⭐ to our repository.
 
 <div align="center">
 
   <a href="https://github.com/c0sm0void/ReVot">
+    <br><img src ="https://img.shields.io/github/contributors/c0sm0void/ReVot?style=for-the-badge"><br>
     <img src="https://contrib.rocks/image?repo=c0sm0void/ReVot&&max=1000" />
   </a>
 </div>
+
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
+
+<table>
+  <tr>
+    <td>
+      <a href="https://next.ossinsight.io/widgets/official/analyze-repo-pushes-and-commits-per-month?repo_id=297538974" target="_blank" style="display: block" align="center">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/analyze-repo-pushes-and-commits-per-month/thumbnail.png?repo_id=297538974&image_size=auto&color_scheme=dark" width="721" height="auto">
+          <img alt="Pushes and Commits of c0sm0void/ReVot" src="https://next.ossinsight.io/widgets/official/analyze-repo-pushes-and-commits-per-month/thumbnail.png?repo_id=297538974&image_size=auto&color_scheme=light" width="721" height="auto">
+        </picture>
+      </a>
+    </td>
+    <td>
+      <a href="https://next.ossinsight.io/widgets/official/compose-recent-top-contributors?repo_id=297538974" target="_blank" style="display: block" align="center">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-recent-top-contributors/thumbnail.png?repo_id=297538974&image_size=auto&color_scheme=dark" width="373" height="auto">
+          <img alt="Top Contributors of c0sm0void/ReVot - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-recent-top-contributors/thumbnail.png?repo_id=297538974&image_size=auto&color_scheme=light" width="373" height="auto">
+        </picture>
+      </a>
+    </td>
+  </tr>
+</table>
+

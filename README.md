@@ -138,11 +138,11 @@ You are free to use, modify, and distribute this software as long as the origina
 ### :zap: Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#123](https://github.com/VesperAkshay/qr-code-generator/issues/123) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
-2. 🔒 Closed issue [#24](https://github.com/VesperAkshay/qr-code-generator/issues/24) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
-3. ❗ Opened issue [#373](https://github.com/aditya-bhaumik/Pathsphere/issues/373) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
-4. 🔒 Closed issue [#313](https://github.com/aditya-bhaumik/Pathsphere/issues/313) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
-5. ❗ Opened issue [#231](https://github.com/SankethBK/diaryvault/issues/231) in [SankethBK/diaryvault](https://github.com/SankethBK/diaryvault)
+1. 🔒 Closed issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
+2. ❗ Opened issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
+3. ❗ Opened issue [#123](https://github.com/VesperAkshay/qr-code-generator/issues/123) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
+4. 🔒 Closed issue [#24](https://github.com/VesperAkshay/qr-code-generator/issues/24) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
+5. ❗ Opened issue [#373](https://github.com/aditya-bhaumik/Pathsphere/issues/373) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
 <!--END_SECTION:activity-->
 
 ---

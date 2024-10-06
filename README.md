@@ -1,7 +1,6 @@
 <div align="center">
   <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot🤖</strong></h1>
   <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
-Bot: <a href="https://t.me/ReVot_Local_Bot">ReVot</a>
   <p>
     <img src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=social"/>
     <img src="https://img.shields.io/github/forks/c0sm0void/ReVot?style=social"/>
@@ -10,7 +9,7 @@ Bot: <a href="https://t.me/ReVot_Local_Bot">ReVot</a>
     <a href="https://github.com/c0sm0void/ReVot/issues"><img src="https://custom-icon-badges.demolab.com/github/issues/c0sm0void/ReVot?label=Issues&labelColor=302d41&color=FF6347&logoColor=FF6347&logo=issue&style=for-the-badge" alt="GitHub Readme Profile Issues"/></a>
     <a href="https://github.com/c0sm0void/ReVot/pull"><img src="https://custom-icon-badges.demolab.com/github/issues-pr/c0sm0void/ReVot?&label=Pull%20requests&labelColor=302d41&color=98FF98&logoColor=98FF98&logo=git-pull-request&style=for-the-badge" alt="GitHub Readme Profile PRs"/></a>
     <a href="https://github.com/c0sm0void/ReVot/graphs/contributors"><img src="https://custom-icon-badges.demolab.com/github/contributors/c0sm0void/ReVot?label=Contributors&labelColor=302d41&color=c9cbff&logoColor=d9e0ee&logo=people&style=for-the-badge"/></a>
-    <a href="https://t.me/c0sm0void"><img src="https://img.shields.io/badge/Contact%20via%20Telegram-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/></a>
+    <a href="https://t.me/ReVot_Local_Bot"><img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/></a>
   <p>
     <img src="http://forthebadge.com/images/badges/made-with-python.svg"/>
     <img src="http://forthebadge.com/images/badges/license-mit.svg"/>

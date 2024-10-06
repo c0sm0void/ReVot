@@ -23,6 +23,12 @@ Bot: <a href="https://t.me/ReVot_Local_Bot">ReVot</a>
 
 ----
 
+### :zap: Recent Activity
+
+<!--START_SECTION:activity-->
+
+---
+
 <!-- toc -->
 
 - [How To Use Me❓](#how-to-use-me)

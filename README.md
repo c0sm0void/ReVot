@@ -138,6 +138,12 @@ You are free to use, modify, and distribute this software as long as the origina
 ### :zap: Recent Activity
 
 <!--START_SECTION:activity-->
+1. 💪 Opened PR [#42](https://github.com/c0sm0void/ReVot/pull/42) in [c0sm0void/ReVot](https://github.com/c0sm0void/ReVot)
+2. ❗ Opened issue [#1](https://github.com/shubhagarwal1/ReVot/issues/1) in [shubhagarwal1/ReVot](https://github.com/shubhagarwal1/ReVot)
+3. 💪 Opened PR [#39](https://github.com/LakshmiSowmya04/GradLink/pull/39) in [LakshmiSowmya04/GradLink](https://github.com/LakshmiSowmya04/GradLink)
+4. ❗ Opened issue [#2](https://github.com/shubhagarwal1/GradLink/issues/2) in [shubhagarwal1/GradLink](https://github.com/shubhagarwal1/GradLink)
+5. 🔓 Reopened issue [#1](https://github.com/shubhagarwal1/GradLink/issues/1) in [shubhagarwal1/GradLink](https://github.com/shubhagarwal1/GradLink)
+<!--END_SECTION:activity-->
 
 ---
 

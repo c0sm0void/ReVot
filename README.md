@@ -138,11 +138,11 @@ You are free to use, modify, and distribute this software as long as the origina
 ### :zap: Recent Activity
 
 <!--START_SECTION:activity-->
-1. ❗ Opened issue [#69](https://github.com/Ratnesh-Team/Rehabify/issues/69) in [Ratnesh-Team/Rehabify](https://github.com/Ratnesh-Team/Rehabify)
-2. 💪 Opened PR [#42](https://github.com/c0sm0void/ReVot/pull/42) in [c0sm0void/ReVot](https://github.com/c0sm0void/ReVot)
-3. ❗ Opened issue [#1](https://github.com/shubhagarwal1/ReVot/issues/1) in [shubhagarwal1/ReVot](https://github.com/shubhagarwal1/ReVot)
-4. 💪 Opened PR [#39](https://github.com/LakshmiSowmya04/GradLink/pull/39) in [LakshmiSowmya04/GradLink](https://github.com/LakshmiSowmya04/GradLink)
-5. ❗ Opened issue [#2](https://github.com/shubhagarwal1/GradLink/issues/2) in [shubhagarwal1/GradLink](https://github.com/shubhagarwal1/GradLink)
+1. ❗ Opened issue [#123](https://github.com/VesperAkshay/qr-code-generator/issues/123) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
+2. 🔒 Closed issue [#24](https://github.com/VesperAkshay/qr-code-generator/issues/24) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
+3. ❗ Opened issue [#373](https://github.com/aditya-bhaumik/Pathsphere/issues/373) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
+4. 🔒 Closed issue [#313](https://github.com/aditya-bhaumik/Pathsphere/issues/313) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
+5. ❗ Opened issue [#231](https://github.com/SankethBK/diaryvault/issues/231) in [SankethBK/diaryvault](https://github.com/SankethBK/diaryvault)
 <!--END_SECTION:activity-->
 
 ---

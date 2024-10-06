@@ -21,15 +21,6 @@
 </div>
 
 ----
-
-### :zap: Recent Activity
-
-<!--START_SECTION:activity-->
-
----
-
-<!-- toc -->
-
 - [How To Use Me❓](#how-to-use-me)
 - [Features:✨](#features)
 - [Commands:🧩](#commands)
@@ -146,6 +137,13 @@ You are free to use, modify, and distribute this software as long as the origina
 
 <!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
+### :zap: Recent Activity
+
+<!--START_SECTION:activity-->
+
+---
+
+<!-- toc -->
 <table>
   <tr>
     <td>

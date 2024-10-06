@@ -54,7 +54,7 @@ Bing. For anime images IQDB and TinEye, for other images I recommend to use Goog
 - /best_match URL: Search for the best match on TinEye (and IQDB when nothing is found on TinEye). The `URL` is a link
     to an image
 
-### Local installation💻
+## Local installation💻
 With this info we now install our virtualenv with (check pre-installations file):
 ```bash
 pip install pipenv  # Install pipenv
@@ -78,19 +78,19 @@ python run_bot.py
 - sudo -H pip install -U pipenv
 
 ## Techstack
-# Programming Language: 
-  -Python 3.6+
-# Libraries:
-  -pipenv: For virtual environment and dependency management
-  -python-telegram-bot: For interacting with Telegram APIs
-  -Reverse Image Search Engines:
-    -Google
-    -Bing
-    -Yandex
-    -TinEye
-    -IQDB
-# Platform:
-  -MS Azure for hosting
+### Programming Language: 
+  - Python 3.12+
+### Libraries:
+  - pipenv: For virtual environment and dependency management
+  - python-telegram-bot: For interacting with Telegram APIs
+  - Reverse Image Search Engines:
+    - Google
+    - Bing
+    - Yandex
+    - TinEye
+    - IQDB
+### Platform:
+  - MS Azure for hosting
 
 ### Repository Structure 📂
 
@@ -126,12 +126,11 @@ ReVot/
 ├── Pipfile.lock              # Locked dependency versions
 ├── README.md                 # Main project documentation
 └── run_bot.py                # Script to run the bot
+```
 
-### License 📜
+## License 📜
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
-
-```
 
 ## 👀 Our Contributors
 

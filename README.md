@@ -41,6 +41,7 @@ pip install pipenv  # Install pipenv
 pipenv --version
 git clone https://github.com/c0sm0void/ReVot.git
 cd /ReVot
+pipenv shell
 pipenv install      # Install all requirements
 ```
 

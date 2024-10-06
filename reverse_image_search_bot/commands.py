@@ -24,7 +24,7 @@ async def start(update: Update, context: CallbackContext):
         update (:obj:`telegram.update.Update`): Telegram Api Update Object
         context (:obj:`telegram.ext.CallbackContext`): Telegram Api Callback Context Object
     """
-    reply = """*ReVot - Reverse Image Search Bot (MS AZURE)*
+    reply = """*ReVot - Reverse Image Search Bot (MS AZURE OR LOCAL)*
 
 (Currently for testing not active all time, you know it's costly ;p)
 
@@ -132,13 +132,13 @@ async def image_search_link(update: Update, context: CallbackContext):
 
     file = await photo.get_file()
     image_buffer = io.BytesIO()
-    await file.download_to_memory(destination=image_buffer)
+    image_buffer.write(await file.download_as_bytearray())
     image_buffer.seek(0)
     with io.BufferedReader(image_buffer) as image_file:
         await general_image_search(context.bot, update, image_file)
 
 
-def general_image_search(bot: Bot, update: Update, image_file, image_extension: str=None):
+async def general_image_search(bot: Bot, update: Update, image_file, image_extension: str=None):
     """Send a reverse image search link for the image sent to us
 
     Args:
@@ -179,7 +179,7 @@ def general_image_search(bot: Bot, update: Update, image_file, image_extension: 
 
     reply = 'You can either use "Best Match" to get your best match right here or search for yourself.'
     reply_markup = InlineKeyboardMarkup(button_list)
-    update.message.reply_text(
+    await update.message.reply_text(
         text=reply,
         reply_markup=reply_markup
     )
@@ -197,7 +197,7 @@ def callback_best_match(bot: Bot, update: Update):
     best_match(bot, update, [url, ])
 
 
-def best_match(bot: Bot, update: Update, args: list):
+async def best_match(bot: Bot, update: Update, args: list):
     """Find best matches for an image.
 
     Args:
@@ -263,4 +263,4 @@ def unknown(bot: Bot, update: Update):
         bot (:obj:`telegram.bot.Bot`): Telegram Api Bot Object.
         update (:obj:`telegram.update.Update`): Telegram Api Update Object
     """
-    update.message.reply_text("Sorry, I didn't understand that command.")
+    bot.send_message(chat_id=update.effective_chat.id, text="Sorry, I didn't understand that command.")

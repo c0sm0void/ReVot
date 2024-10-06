@@ -130,7 +130,7 @@ You are free to use, modify, and distribute this software as long as the origina
 <div align="center">
 
   <a href="https://github.com/c0sm0void/ReVot">
-    <br><img src ="https://img.shields.io/github/contributors/c0sm0void/ReVot?style=for-the-badge"><br>
+    <br><img src ="https://github.com/c0sm0void/ReVot/graphs/contributors"><br>
         <img src="https://contrib.rocks/image?repo=c0sm0void/ReVot&&max=100&&anon=1" />
   </a>
 </div>

@@ -21,6 +21,10 @@
 </div>
 
 ----
+
+### :zap: Recent Activity
+
+----
 - [How To Use Me❓](#how-to-use-me)
 - [Features:✨](#features)
 - [Commands:🧩](#commands)

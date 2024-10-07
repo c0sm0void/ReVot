@@ -138,11 +138,11 @@ You are free to use, modify, and distribute this software as long as the origina
 ### :zap: Recent Activity
 
 <!--START_SECTION:activity-->
-1. 🔒 Closed issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
-2. ❗ Opened issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
-3. ❗ Opened issue [#123](https://github.com/VesperAkshay/qr-code-generator/issues/123) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
-4. 🔒 Closed issue [#24](https://github.com/VesperAkshay/qr-code-generator/issues/24) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
-5. ❗ Opened issue [#373](https://github.com/aditya-bhaumik/Pathsphere/issues/373) in [aditya-bhaumik/Pathsphere](https://github.com/aditya-bhaumik/Pathsphere)
+1. 🗣 Commented on [#11](https://github.com/prrockzed/nvimDev/pull/11#issuecomment-2396130262) in [prrockzed/nvimDev](https://github.com/prrockzed/nvimDev)
+2. 🔒 Closed issue [#37](https://github.com/LakshmiSowmya04/GradLink/issues/37) in [LakshmiSowmya04/GradLink](https://github.com/LakshmiSowmya04/GradLink)
+3. 🔒 Closed issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
+4. ❗ Opened issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
+5. ❗ Opened issue [#123](https://github.com/VesperAkshay/qr-code-generator/issues/123) in [VesperAkshay/qr-code-generator](https://github.com/VesperAkshay/qr-code-generator)
 <!--END_SECTION:activity-->
 
 ---

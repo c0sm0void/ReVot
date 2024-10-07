@@ -18,6 +18,7 @@
     <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">
     <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label">
     <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
+    <img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green">
 </div>
 
 ---

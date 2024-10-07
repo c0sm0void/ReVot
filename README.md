@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot</strong>![](https://github.com/toxic-for-code/ReVot/blob/master/gifs/robotface.gif)</h1>
+  <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot</strong>![](gifs/robotface.gif)</h1>
   <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
   <p>
     <img src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=social"/>

@@ -13,11 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Debug payload
+        run: echo "${{ toJson(github.event) }}"
+
       - name: Label issues and PRs
         uses: actions/github-script@v6
         with:
           script: |
             const issue = context.payload.issue || context.payload.pull_request;
+            console.log('Issue:', issue);
             const labels = [];
 
             // Define keywords and their associated labels
@@ -42,6 +46,8 @@ jobs:
                 labels.push(label);
               }
             }
+
+            console.log('Labels to add:', labels);
 
             if (labels.length > 0) {
               github.rest.issues.addLabels({

@@ -1,7 +1,0 @@
-sudo apt install python3-pip
-sudo apt-get install git
-pip install beautifulsoup4
-pip install moviepy
-pip install pillow
-pip install python-telegram-bot
-pip install pipenv

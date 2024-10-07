@@ -42,7 +42,8 @@ jobs:
 
             // Apply labels based on title or body content
             for (const [keyword, label] of Object.entries(labelMappings)) {
-              if (issue.title.toLowerCase().includes(keyword) || issue.body.toLowerCase().includes(keyword)) {
+              if ((issue.title && issue.title.toLowerCase().includes(keyword)) || 
+                  (issue.body && issue.body.toLowerCase().includes(keyword))) {
                 labels.push(label);
               }
             }

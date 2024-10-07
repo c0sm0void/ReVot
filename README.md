@@ -57,8 +57,43 @@ pipenv install      # Install all requirements
 
 You have to get an API Token from Telegram. You can easily get one via the [@BotFather](https://t.me/BotFather).
 
-Now that you have your API Token copy the `settings.example.py` to `settings.py` and paste in your API Token.
+Now that you have your API Token, create a `settings.py` file and add one of the configurations below based on your preferred uploading method.
+
+### Option 1: SSH Uploader
+If you want to upload files using SSH, use the following configuration in your `settings.py`:
+
+```python
+TELEGRAM_API_TOKEN = 'Tel Bot Token By @BotFather'
+
+UPLOADER = {
+    'uploader': 'reverse_image_search_bot.uploaders.ssh.SSHUploader',
+    'url': 'Host Domain Name',
+    'configuration': {
+        'host': 'Host IP (PUBLIC)',
+        'user': 'Yourname',
+        'password': 'Password',
+        'upload_dir': '/path/to/ReVot/',
+        'key_filename': '/path/to/.ssh/rsakey.pub (Public key)',
+    }
+}
+```
+### Option 2: File System Uploader
+If you prefer to upload files from your local file system, use the following configuration in your `settings.py`:
+
+```python
+TELEGRAM_API_TOKEN = 'Tel Bot Token By @BotFather'
+
+UPLOADER = {
+    'uploader': 'reverse_image_search_bot.uploaders.file_system.FileSystemUploader',
+    'url': 'Host Domain Name',
+    'configuration': {
+       'path': '/path/to/ReVot/',
+    }
+}
+```
+
 Finally, you can use this to start your bot.
+
 ```bash
 python run_bot.py
 ```

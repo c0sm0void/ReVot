@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot🤖</strong></h1>
+  <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Robot.webp" alt="Robot" width="30" height="30" /></strong></h1>
   <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
   <p>
     <img src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=social"/>
@@ -18,24 +18,18 @@
     <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">
     <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label">
     <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
+    <img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green">
 </div>
 
 ---
-
-- [How To Use Me❓](#how-to-use-me)
-- [Features:✨](#features)
-- [Commands:🧩](#commands)
-- [Local installation💻](#local-installation)
-- [Errors and Fixes❌](#errors-and-fixes)
-
 <!-- tocstop -->
 
-## How To Use Me❓
+## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 
 Send me images, gifs or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
 Bing. For anime images IQDB and TinEye, for other images, I recommend using Google, Bing and Yandex.
 
-## Features:✨
+## Features: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Roller%20Coaster.png" alt="Roller Coaster" width="25" height="25" />
 
 - Give you image reverse search links
 - Supports normal images like JPG, PNG, WEBP
@@ -48,11 +42,13 @@ Bing. For anime images IQDB and TinEye, for other images, I recommend using Goog
 - /best_match URL: Search for the best match on TinEye (and IQDB when nothing is found on TinEye). The `URL` is a link
   to an image
 
-## Local installation💻
+## Local installation: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="25" height="25" />
 
 With this info, we now install our virtualenv with (check pre-installations file):
 
 ```bash
+chmod +x pre-installations.sh
+./pre-installations.sh
 pip install pipenv  # Install pipenv
 pipenv --version
 git clone https://github.com/c0sm0void/ReVot.git
@@ -107,7 +103,7 @@ Finally, you can use this to start your bot.
 python run_bot.py
 ```
 
-## Errors and Fixes❌
+## Errors and Fixes:❌
 
 - Use [Python v3.12](https://www.python.org/downloads/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
@@ -133,8 +129,9 @@ python run_bot.py
 ### Platform:
 
 - MS Azure for hosting
+- Ubuntu virtual machine for hosting
 
-### Repository Structure 📂
+### Repository Structure: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Crystal%20Ball.png" alt="Crystal Ball" width="25" height="25" />
 
 ```plaintext
 ReVot/
@@ -170,15 +167,15 @@ ReVot/
 └── run_bot.py                # Script to run the bot
 ```
 
-## License 📜
+## License:📜
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" width="35" height="35"> Our Contributors
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png" alt="Beating Heart" width="25" height="25" /> Our Contributors
 
 - We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating ReVot to greater heights.
-- Make sure you show some love by giving ⭐ to our repository.
+- Make sure you show some love by giving <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Star.png" alt="Star" width="25" height="25" /> to our repository.
 
 <div align="center">
 <a href="https://github.com/c0sm0void/ReVot/graphs/contributors">

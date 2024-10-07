@@ -47,6 +47,8 @@ Bing. For anime images IQDB and TinEye, for other images, I recommend using Goog
 With this info, we now install our virtualenv with (check pre-installations file):
 
 ```bash
+chmod +x pre-installations.sh
+./pre-installations.sh
 pip install pipenv  # Install pipenv
 pipenv --version
 git clone https://github.com/c0sm0void/ReVot.git

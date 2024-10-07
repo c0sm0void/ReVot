@@ -20,7 +20,8 @@
     <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
 </div>
 
-----
+---
+
 - [How To Use Me❓](#how-to-use-me)
 - [Features:✨](#features)
 - [Commands:🧩](#commands)
@@ -30,22 +31,27 @@
 <!-- tocstop -->
 
 ## How To Use Me❓
+
 Send me images, gifs or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
 Bing. For anime images IQDB and TinEye, for other images, I recommend using Google, Bing and Yandex.
 
 ## Features:✨
+
 - Give you image reverse search links
 - Supports normal images like JPG, PNG, WEBP
 - Supports stickers
 - Supports GIFs (can take some time till the GIFs are ready)
 
 ## Commands:🧩
+
 - /help, /start: show a help message with information about the bot and its usage.
 - /best_match URL: Search for the best match on TinEye (and IQDB when nothing is found on TinEye). The `URL` is a link
-    to an image
+  to an image
 
 ## Local installation💻
+
 With this info, we now install our virtualenv with (check pre-installations file):
+
 ```bash
 pip install pipenv  # Install pipenv
 pipenv --version
@@ -60,6 +66,7 @@ You have to get an API Token from Telegram. You can easily get one via the [@Bot
 Now that you have your API Token, create a `settings.py` file and add one of the configurations below based on your preferred uploading method.
 
 ### Option 1: SSH Uploader
+
 If you want to upload files using SSH, use the following configuration in your `settings.py`:
 
 ```python
@@ -77,7 +84,9 @@ UPLOADER = {
     }
 }
 ```
+
 ### Option 2: File System Uploader
+
 If you prefer to upload files from your local file system, use the following configuration in your `settings.py`:
 
 ```python
@@ -97,25 +106,33 @@ Finally, you can use this to start your bot.
 ```bash
 python run_bot.py
 ```
+
 ## Errors and Fixes❌
+
 - Use [Python v3.12](https://www.python.org/downloads/) as default
 - ssh-keyscan -H <IP address/Hostname> >> ~/.shh/known_hosts
 - sudo -H pip install -U pipenv
 
 ## Techstack
-### Programming Language: 
-  - Python 3.12+
+
+### Programming Language:
+
+- Python 3.12+
+
 ### Libraries:
-  - pipenv: For virtual environment and dependency management
-  - python-telegram-bot: For interacting with Telegram APIs
-  - Reverse Image Search Engines:
-    - Google
-    - Bing
-    - Yandex
-    - TinEye
-    - IQDB
+
+- pipenv: For virtual environment and dependency management
+- python-telegram-bot: For interacting with Telegram APIs
+- Reverse Image Search Engines:
+  - Google
+  - Bing
+  - Yandex
+  - TinEye
+  - IQDB
+
 ### Platform:
-  - MS Azure for hosting
+
+- MS Azure for hosting
 
 ### Repository Structure 📂
 
@@ -154,6 +171,7 @@ ReVot/
 ```
 
 ## License 📜
+
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 You are free to use, modify, and distribute this software as long as the original license and copyright notice are retained.
 
@@ -169,18 +187,6 @@ You are free to use, modify, and distribute this software as long as the origina
 </div>
 
 <!-- Made with [OSS Insight](https://ossinsight.io/) -->
-
-### :zap: Recent Activity
-
-<!--START_SECTION:activity-->
-1. 🗣 Commented on [#49](https://github.com/jahnvisahni31/DesignDeck/pull/49#issuecomment-2396334565) in [jahnvisahni31/DesignDeck](https://github.com/jahnvisahni31/DesignDeck)
-2. 🗣 Commented on [#38](https://github.com/notsoocool/codecache/issues/38#issuecomment-2396135830) in [notsoocool/codecache](https://github.com/notsoocool/codecache)
-3. 🗣 Commented on [#11](https://github.com/prrockzed/nvimDev/pull/11#issuecomment-2396130262) in [prrockzed/nvimDev](https://github.com/prrockzed/nvimDev)
-4. 🔒 Closed issue [#37](https://github.com/LakshmiSowmya04/GradLink/issues/37) in [LakshmiSowmya04/GradLink](https://github.com/LakshmiSowmya04/GradLink)
-5. 🔒 Closed issue [#87](https://github.com/AmateursLeague/sneaky-package/issues/87) in [AmateursLeague/sneaky-package](https://github.com/AmateursLeague/sneaky-package)
-<!--END_SECTION:activity-->
-
----
 
 <!-- toc -->
 <table>

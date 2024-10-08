@@ -13,11 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Debug payload
+        run: echo "${{ toJson(github.event) }}"
+
       - name: Label issues and PRs
         uses: actions/github-script@v6
         with:
           script: |
             const issue = context.payload.issue || context.payload.pull_request;
+            console.log('Issue:', issue);
             const labels = [];
 
             // Define keywords and their associated labels
@@ -38,10 +42,13 @@ jobs:
 
             // Apply labels based on title or body content
             for (const [keyword, label] of Object.entries(labelMappings)) {
-              if (issue.title.toLowerCase().includes(keyword) || issue.body.toLowerCase().includes(keyword)) {
+              if ((issue.title && issue.title.toLowerCase().includes(keyword)) || 
+                  (issue.body && issue.body.toLowerCase().includes(keyword))) {
                 labels.push(label);
               }
             }
+
+            console.log('Labels to add:', labels);
 
             if (labels.length > 0) {
               github.rest.issues.addLabels({

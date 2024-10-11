@@ -14,6 +14,22 @@ uploader_module = import_module(uploader_pkg_name)
 uploader_class = getattr(uploader_module, uploader_class_name)
 uploader = uploader_class(UPLOADER['configuration'])
 
+from ratelimit import limits, sleep_and_retry
+
+# Set rate limits to 5 calls per 60 seconds
+CALLS = 5
+TIME_PERIOD = 60  # time period in seconds
+
+@sleep_and_retry
+@limits(calls=CALLS, period=TIME_PERIOD)
+
+
+def limited_request(url, params=None):
+    response = requests.get(url, params=params)
+    if response.status_code != 200:
+        raise Exception(f"API request failed with status code {response.status_code}")
+    return response
+
 
 class ReverseImageSearchEngine:
     """The base class for reverse image search engines to inherit from.
@@ -112,7 +128,7 @@ class ReverseImageSearchEngine:
         if url == self.search_url and self.search_html:
             return self.search_html
 
-        request = requests.get(self.get_search_link_by_url(url))
+        request = limited_request.get(self.get_search_link_by_url(url)) # Use rate-limited request
         self.search_html = request.text
         return self.search_html
 
@@ -267,9 +283,10 @@ class TinEyeReverseImageSearchEngine(ReverseImageSearchEngine):
             url (:obj:`str`): Url to image to check
         """
         try:
-            return requests.head(url) == 200
-        except:
-            pass
+            return limited_request(url).status_code == 200
+        except Exception as e:
+            self.logger.warning(f"Failed to check image availability: {e}")
+            return False
 
 
 class BingReverseImageSearchEngine(ReverseImageSearchEngine):

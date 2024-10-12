@@ -186,6 +186,17 @@ You are free to use, modify, and distribute this software as long as the origina
 <!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
 <!-- toc -->
+
+---
+
+### :zap: Recent Activity
+
+<!--START_SECTION:activity-->
+
+<!--END_SECTION:activity-->
+
+---
+
 <table>
   <tr>
     <td>

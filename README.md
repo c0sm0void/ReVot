@@ -44,7 +44,7 @@ Bing. For anime images IQDB and TinEye, for other images, I recommend using Goog
 
 ## Local installation: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Technologist%20Light%20Skin%20Tone.png" alt="Technologist Light Skin Tone" width="25" height="25" />
 
-With this info, we now install our virtualenv with (check pre-installations file):
+With this info, we now install our virtual environment with (check pre-installations file):
 
 ```bash
 chmod +x pre-installations.sh

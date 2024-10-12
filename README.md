@@ -182,16 +182,6 @@ You are free to use, modify, and distribute this software as long as the origina
 </a>
 </div>
 
----
-
-### Recent Activity :zap: 
-
-<!--START_SECTION:activity-->
-
-<!--END_SECTION:activity-->
-
----
-
 <!-- Made with [OSS Insight](https://ossinsight.io/) -->
 
 <!-- toc -->

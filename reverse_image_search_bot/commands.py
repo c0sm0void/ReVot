@@ -143,6 +143,25 @@ async def image_search_link(update: Update, context: CallbackContext):
     await limited_image_search(update, context)
 
 
+async def group_image_reply_search(update: Update, context: CallbackContext):
+    """Reverse search for reply mentions to images in groups."""
+    try:
+        if update.message.reply_to_message and update.message.reply_to_message.photo:
+            photo = update.message.reply_to_message.photo[-1]
+            file = await photo.get_file()
+
+            image_buffer = io.BytesIO()
+            image_buffer.write(await file.download_as_bytearray())
+            image_buffer.seek(0)
+
+            async with io.BufferedReader(image_buffer) as image_file:
+                await general_image_search(context.bot, update, image_file)
+        else:
+            await context.bot.send_message(chat_id=update.effective_chat.id, text="No image found in the reply.")
+    except Exception as e:
+        await context.bot.send_message(chat_id=update.effective_chat.id, text=f'An error occurred: {str(e)}')
+
+
 class ReverseImageSearchHandler:
     """Handles reverse image search for multiple engines."""
     def __init__(self):

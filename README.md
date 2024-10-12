@@ -22,7 +22,6 @@
 </div>
 
 ---
-<!-- tocstop -->
 
 ## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 

@@ -22,7 +22,6 @@
 </div>
 
 ---
-<!-- tocstop -->
 
 ## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 
@@ -183,13 +182,9 @@ You are free to use, modify, and distribute this software as long as the origina
 </a>
 </div>
 
-<!-- Made with [OSS Insight](https://ossinsight.io/) -->
-
-<!-- toc -->
-
 ---
 
-### :zap: Recent Activity
+### Recent Activity :zap: 
 
 <!--START_SECTION:activity-->
 
@@ -197,6 +192,9 @@ You are free to use, modify, and distribute this software as long as the origina
 
 ---
 
+<!-- Made with [OSS Insight](https://ossinsight.io/) -->
+
+<!-- toc -->
 <table>
   <tr>
     <td>

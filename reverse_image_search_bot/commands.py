@@ -16,6 +16,46 @@ from .image_search import BingReverseImageSearchEngine, \
     GoogleReverseImageSearchEngine, IQDBReverseImageSearchEngine, \
     TinEyeReverseImageSearchEngine, YandexReverseImageSearchEngine
 
+from ratelimit import limits, sleep_and_retry
+
+# Allow up to 5 requests per minute (adjust as needed)
+MAX_CALLS = 5
+PERIOD = 60  # In seconds (1 minute)
+
+@sleep_and_retry
+@limits(calls=MAX_CALLS, period=PERIOD)
+
+async def limited_image_search(update: Update, context: CallbackContext):
+    """Handles image search requests with rate limiting.
+
+    Args:
+        update (:obj:`telegram.update.Update`): Telegram Api Update Object
+        context (:obj:`telegram.ext.CallbackContext`): Telegram Api Callback Context Object
+    """
+    # Notify the user that their request is being processed
+    await context.bot.send_message(chat_id=update.effective_chat.id, text='Please wait for your results ...')
+
+    # Check if the update contains a photo or document
+    if update.effective_message.photo:
+        photo = update.effective_message.photo[-1]  # Get the highest resolution version of the photo
+    elif update.effective_message.document:
+        photo = update.effective_message.document
+    else:
+        await context.bot.send_message(chat_id=update.effective_chat.id, text='No image found.')
+        return
+
+    # Retrieve the file and prepare it for image search
+    file = await photo.get_file()
+    image_buffer = io.BytesIO()
+    image_buffer.write(await file.download_as_bytearray())
+    image_buffer.seek(0)
+    
+    # Perform the reverse image search
+    with io.BufferedReader(image_buffer) as image_file:
+        await general_image_search(context.bot, update, image_file)
+
+# You can now call this function from your existing `image_search_link` function or any other place where you need it.
+
 
 async def start(update: Update, context: CallbackContext):
     """Send Start / Help message to client.
@@ -114,6 +154,7 @@ def sticker_image_search(bot: Bot, update: Update):
 
 
 async def image_search_link(update: Update, context: CallbackContext):
+    
     """Send a reverse image search link for the image he sent us to the client
 
     Args:
@@ -136,6 +177,9 @@ async def image_search_link(update: Update, context: CallbackContext):
     image_buffer.seek(0)
     with io.BufferedReader(image_buffer) as image_file:
         await general_image_search(context.bot, update, image_file)
+
+    #Added ratelimit function
+    await limited_image_search(update, context)
 
 
 async def general_image_search(bot: Bot, update: Update, image_file, image_extension: str=None):
@@ -183,6 +227,8 @@ async def general_image_search(bot: Bot, update: Update, image_file, image_exten
         text=reply,
         reply_markup=reply_markup
     )
+    
+    
 
 
 def callback_best_match(bot: Bot, update: Update):

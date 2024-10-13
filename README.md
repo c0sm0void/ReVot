@@ -23,6 +23,23 @@
 
 ---
 
+## Table of Contents
+
+- [How To Use Me](#how-to-use-me-)
+- [Features](#features-)
+- [Commands](#commands)
+- [Local installation](#local-installation-)
+	- [Option 1: SSH Uploader](#option-1-ssh-uploader)
+	- [Option 2: File System Uploader](#option-2-file-system-uploader)
+- [Errors and Fixes](#errors-and-fixes)
+- [Techstacks](#techstack)
+	- [Programming Language](#programming-language)
+	- [Libraries](#libraries)
+	- [Platform](#platform)
+	- [Repository Structure](#repository-structure-)
+- [License](#license)
+- [Contributors](#-our-contributors)
+
 ## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 
 Send me images, gifs or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and

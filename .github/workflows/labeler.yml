@@ -13,14 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Debug payload
-        run: echo "${{ toJson(github.event) }}"
-
       - name: Label issues and PRs
+        id: add_labels
         uses: actions/github-script@v6
         with:
           script: |
             const issue = context.payload.issue || context.payload.pull_request;
+            if (!issue) {
+              console.log('No issue or pull request found.');
+              return;
+            }
+
             console.log('Issue:', issue);
             const labels = ['gssoc-ext', 'hacktoberfest', 'hacktoberfest-accepted', 'level?'];
 
@@ -54,4 +57,6 @@ jobs:
                 issue_number: issue.number,
                 labels: labels
               });
+            } else {
+              console.log('No labels to add.');
             }

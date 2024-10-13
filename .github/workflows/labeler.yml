@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Debug payload
-        run: echo "${{ toJson(github.event) }}"
-
       - name: Label issues and PRs
         id: add_labels
         uses: actions/github-script@v6

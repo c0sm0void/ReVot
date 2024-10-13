@@ -23,6 +23,23 @@
 
 ---
 
+## Table of Contents
+
+- [How To Use Me](#how-to-use-me-)
+- [Features](#features-)
+- [Commands](#commands)
+- [Local installation](#local-installation-)
+	- [Option 1: SSH Uploader](#option-1-ssh-uploader)
+	- [Option 2: File System Uploader](#option-2-file-system-uploader)
+- [Errors and Fixes](#errors-and-fixes)
+- [Techstacks](#techstack)
+	- [Programming Language](#programming-language)
+	- [Libraries](#libraries)
+	- [Platform](#platform)
+	- [Repository Structure](#repository-structure-)
+- [License](#license)
+- [Contributors](#-our-contributors)
+
 ## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 
 Send me images, gifs or stickers(non-animated), I will send you direct reverse image search links of IQDB, Google, TinEye, Yandex and
@@ -135,35 +152,47 @@ python run_bot.py
 ```plaintext
 ReVot/
 │
-├── .github/                  # GitHub-specific files
+├── .github/                    # GitHub-specific files
 │   └── ISSUE_TEMPLATE/
-│       ├── bug_report.md     # Template for reporting bugs
-│       ├── custom.md         # Custom issue template
-│       └── feature_request.md # Template for requesting features
+│       ├── bug_report.md       # Template for reporting bugs
+│       ├── custom.md           # Custom issue template
+│       └── feature_request.md  # Template for requesting features
+│   │
+│   └── workflows/                     # Directory for GitHub Actions workflows
+│		├── greetings.yml      # Workflow for greeting new contributors
+│		└── labeler.yml        # Workflow for auto-labeling pull requests and issues
+│   
+├── deploy/                        # Deployment scripts and configurations
+│   └── after_push                 # Post-deployment scripts
 │
-├── deploy/                   # Deployment scripts and configurations
-│   ├── after_push            # Post-deployment scripts
-│
-├── reverse_image_search_bot/ # Main bot directory
-│   ├── uploaders/            # Uploader modules
-│   │   ├── __init__.py       # Initialize uploaders package
+├── reverse_image_search_bot/      # Main bot directory
+│   ├── images/                    # Sample image for demonstration
+│   │   └── example_usage.png      # Example bot usage
+│   │
+│   ├── uploaders/             # Uploader modules
+│   │   ├── __init__.py        # Initialize uploaders package
 │   │   ├── base_uploader.py   # Base class for uploaders
 │   │   ├── file_system.py     # File system operations
-│   │   └── ssh.py            # SSH related functions
+│   │   └── ssh.py             # SSH related functions
 │   │
-│   ├── __init__.py           # Initialize bot package
-│   ├── bot.py                # Main bot logic
-│   ├── commands.py           # Command handling for the bot
-│   ├── image_search.py       # Functions for reverse image search
+│   ├── __init__.py            # Initialize bot package
+│   ├── bot.py                 # Main bot logic
+│   ├── commands.py            # Command handling for the bot
+│   ├── image_search.py        # Functions for reverse image search
 │   ├── settings.example.py    # Example settings file for API tokens
 │   ├── settings.example1.py   # Another example settings file
-│   ├── utils.py              # Utility functions and helpers
+│   ├── settings.py            # Settings file
+│   └── utils.py               # Utility functions and helpers
 │
-├── LICENSE                   # License information
-├── Pipfile                   # Pipenv dependencies
-├── Pipfile.lock              # Locked dependency versions
-├── README.md                 # Main project documentation
-└── run_bot.py                # Script to run the bot
+├── .gitignore                 # Files and directories to be ignored by Git
+├── CODE_OF_CONDUCT.md         # Community guidelines and rules
+├── CONTRIBUTING.md            # Contribution guidelines
+├── LICENSE                    # License information
+├── Pipfile                    # Pipenv dependencies
+├── Pipfile.lock               # Locked dependency versions
+├── pre-installations.sh       # Pre-installation
+├── README.md                  # Main project documentation
+└── run_bot.py                 # Script to run the bot
 ```
 
 ## License:📜

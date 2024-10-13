@@ -17,6 +17,7 @@ jobs:
         run: echo "${{ toJson(github.event) }}"
 
       - name: Label issues and PRs
+        id: add_labels
         uses: actions/github-script@v6
         with:
           script: |

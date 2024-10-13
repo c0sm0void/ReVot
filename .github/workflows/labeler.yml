@@ -22,6 +22,11 @@ jobs:
         with:
           script: |
             const issue = context.payload.issue || context.payload.pull_request;
+            if (!issue) {
+              console.log('No issue or pull request found.');
+              return;
+            }
+
             console.log('Issue:', issue);
             const labels = ['gssoc-ext', 'hacktoberfest', 'hacktoberfest-accepted', 'level?'];
 
@@ -55,4 +60,6 @@ jobs:
                 issue_number: issue.number,
                 labels: labels
               });
+            } else {
+              console.log('No labels to add.');
             }

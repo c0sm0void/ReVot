@@ -6,10 +6,21 @@
     <img src="https://img.shields.io/github/forks/c0sm0void/ReVot?style=social"/>
     <img src="https://img.shields.io/github/watchers/c0sm0void/ReVot?style=social"/>
   <p>
-    <a href="https://github.com/c0sm0void/ReVot/issues"><img src="https://custom-icon-badges.demolab.com/github/issues/c0sm0void/ReVot?label=Issues&labelColor=302d41&color=FF6347&logoColor=FF6347&logo=issue&style=for-the-badge" alt="GitHub Readme Profile Issues"/></a>
-    <a href="https://github.com/c0sm0void/ReVot/pull"><img src="https://custom-icon-badges.demolab.com/github/issues-pr/c0sm0void/ReVot?&label=Pull%20requests&labelColor=302d41&color=98FF98&logoColor=98FF98&logo=git-pull-request&style=for-the-badge" alt="GitHub Readme Profile PRs"/></a>
-    <a href="https://github.com/c0sm0void/ReVot/graphs/contributors"><img src="https://custom-icon-badges.demolab.com/github/contributors/c0sm0void/ReVot?label=Contributors&labelColor=302d41&color=c9cbff&logoColor=d9e0ee&logo=people&style=for-the-badge"/></a>
-    <a href="https://t.me/ReVot_Local_Bot"><img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/></a>
+    <div align="center">
+  <a href="https://github.com/c0sm0void/ReVot/issues">
+    <img src="https://img.shields.io/github/issues/c0sm0void/ReVot?style=for-the-badge&color=FF6347&label=Issues&logo=github" alt="GitHub Issues"/>
+  </a>
+  <a href="https://github.com/c0sm0void/ReVot/pulls">
+    <img src="https://img.shields.io/github/issues-pr/c0sm0void/ReVot?style=for-the-badge&color=98FF98&label=Pull%20Requests&logo=github" alt="GitHub Pull Requests"/>
+  </a>
+  <a href="https://github.com/c0sm0void/ReVot/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/c0sm0void/ReVot?style=for-the-badge&color=c9cbff&label=Contributors&logo=github" alt="GitHub Contributors"/>
+  </a>
+  <a href="https://t.me/ReVot_Local_Bot">
+    <img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/>
+  </a>
+</div>
+
   <p>
     <img src="http://forthebadge.com/images/badges/made-with-python.svg"/>
     <img src="http://forthebadge.com/images/badges/license-mit.svg"/>

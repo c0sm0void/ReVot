@@ -1,3 +1,4 @@
+<a id="top"></a>
 <div align="center">
   <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Robot.webp" alt="Robot" width="30" height="30" /></strong></h1>
   <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
@@ -34,7 +35,9 @@
 
 ---
 
-## Table of Contents
+
+<details>
+ <summary><h2>:sparkles:Table of Contents:</h2></summary>
 
 - [How To Use Me](#how-to-use-me-)
 - [Features](#features-)
@@ -50,6 +53,9 @@
 	- [Repository Structure](#repository-structure-)
 - [License](#license)
 - [Contributors](#-our-contributors)
+
+</details>
+<hr>
 
 ## How To Use Me: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Alien%20Monster.webp" alt="Alien Monster" width="25" height="25" />
 
@@ -158,7 +164,11 @@ python run_bot.py
 - MS Azure for hosting
 - Ubuntu virtual machine for hosting
 
-### Repository Structure: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Crystal%20Ball.png" alt="Crystal Ball" width="25" height="25" />
+<hr>
+
+<details>
+ <summary><h3>Repository Structure: <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Crystal%20Ball.png" alt="Crystal Ball" width="25" height="25" /></h3></summary>
+
 
 ```plaintext
 ReVot/
@@ -204,7 +214,13 @@ ReVot/
 ├── pre-installations.sh       # Pre-installation
 ├── README.md                  # Main project documentation
 └── run_bot.py                 # Script to run the bot
+
+
 ```
+
+</details>
+
+<hr>
 
 ## License:📜
 
@@ -245,3 +261,16 @@ You are free to use, modify, and distribute this software as long as the origina
     </td>
   </tr>
 </table>
+
+
+<hr>
+<div>
+  <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f64f_1f3fb/512.webp" width="35" height="35"> Support </h2>
+</div>
+
+<div>
+  Don't forget to leave a star<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="30"> for this project!
+</div> <br>
+
+<a href="#top" style="position: fixed; bottom: 20px; right: 20px; background-color: black ; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; border-radius: 5px; font-family: Arial; font-size: 16px;">Go to Top</a>
+

@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Git credentials
-        run: echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
-
       - name: Label issues and PRs
         id: add_labels
         uses: actions/github-script@v6
@@ -53,8 +50,8 @@ jobs:
 
             console.log('Labels to add:', labels);
 
-            try {
-              if (labels.length > 0) {
+            if (labels.length > 0) {
+              try {
                 await github.rest.issues.addLabels({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
@@ -62,13 +59,14 @@ jobs:
                   labels: labels
                 });
                 console.log('Labels added successfully.');
-              } else {
-                console.log('No labels to add.');
+              } catch (error) {
+                console.error('Error adding labels:', error);
+                throw error;
               }
-            } catch (error) {
-              console.error('Error adding labels:', error);
-              throw error;
+            } else {
+              console.log('No labels to add.');
             }
+
 
       - name: Log output
         run: echo ${{ steps.add_labels.outputs.output }}

@@ -1,5 +1,4 @@
 name: Auto Labeler
-
 on:
   issues:
     types: [opened, edited]
@@ -9,9 +8,14 @@ on:
 jobs:
   labeler:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Label issues and PRs
         id: add_labels
@@ -23,10 +27,8 @@ jobs:
               console.log('No issue or pull request found.');
               return;
             }
-
             console.log('Issue:', issue);
             const labels = ['gssoc-ext', 'hacktoberfest', 'hacktoberfest-accepted', 'level?'];
-
             // Define keywords and their associated labels
             const labelMappings = {
               'bug': 'bug',
@@ -39,16 +41,15 @@ jobs:
               'automation': 'automation',
               // Add more mappings as needed
             };
-
             // Apply labels based on title or body content
             for (const [keyword, label] of Object.entries(labelMappings)) {
-              if ((issue.title && issue.title.toLowerCase().includes(keyword)) || 
-                  (issue.body && issue.body.toLowerCase().includes(keyword))) {
+              if ((issue.title && issue.title.toLowerCase().includes(keyword)) ||
+                   (issue.body && issue.body.toLowerCase().includes(keyword))) {
                 labels.push(label);
               }
             }
-
             console.log('Labels to add:', labels);
+
 
             if (labels.length > 0) {
               try {

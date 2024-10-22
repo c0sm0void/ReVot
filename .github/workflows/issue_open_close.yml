@@ -1,7 +1,5 @@
 name: Issue Auto Comment
 
-# Created by @smog-root
-
 on:
   issues:
     types: [opened, closed]

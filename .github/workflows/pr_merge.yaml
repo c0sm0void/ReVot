@@ -1,7 +1,5 @@
 name: Merge Thank You
 
-# Created by @smog-root
-
 on:
   pull_request_target:
     types: [closed]  # Trigger when a PR is closed

@@ -231,7 +231,7 @@ You are free to use, modify, and distribute this software as long as the origina
 ### This project is now OFFICIALLY accepted for
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/SwanandD121/FeatherPerfect_fe/refs/heads/main/Untitled%20design.png" alt="GSSoC 2024 Extd" width="80%">
+  <img src="https://gssoc.girlscript.tech/GS_logo_Black.svg" alt="GSSoC 2024 Extd" width="80%">
   <img src="https://hacktoberfest.com/_next/static/media/logo-hacktoberfest-11--green.dd2bc4ca.svg" alt="Hacktoberfest 2024" width="80%">
 </div>
 <br>

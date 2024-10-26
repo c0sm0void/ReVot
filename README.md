@@ -236,12 +236,12 @@ You are free to use, modify, and distribute this software as long as the origina
 </div>
 <br>
 
-### 💵 How to Contribute
+## How to Contribute:
 
    #### 1. Fork the repository to your GitHub account.
    #### 2. Clone the forked repository to your local machine.
    ```bash
-   git clone https://github.com/<github_username>ReVot.git
+   git clone https://github.com/c0sm0void/ReVot.git
    ```
    #### 3. Create a new branch for your changes.
    ```bash
@@ -258,13 +258,8 @@ You are free to use, modify, and distribute this software as long as the origina
    git push origin feature/your-feature
    ```
    #### 7. Open a Pull Request (PR) against the main repository.
-### Additional Notes
-   #### Start working on the issue, Don't wait to get it assigned by the maintainers
-   #### Your every contribution counts, Thanks for contributing to ReVot
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-### Complete this process in GitHub (in your browser)
+## Process:
 
 ```mermaid
 flowchart LR

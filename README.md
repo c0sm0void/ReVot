@@ -34,6 +34,9 @@
   <p>
     <img src="http://forthebadge.com/images/badges/made-with-python.svg"/>
     <img src="http://forthebadge.com/images/badges/license-mit.svg"/>
+    <a href="https://t.me/ReVot_Local_Bot">
+    <img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/>
+    </a>
   <p>
     <img src="https://badgen.net/badge/icon/azure?icon=azure&label">
     <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">

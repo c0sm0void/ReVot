@@ -2,35 +2,61 @@
 <div align="center">
   <h1 align="center" style="display: block; font-size: 3em; font-weight: bold; margin-block-end: 1em;"><strong>ReVot<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Robot.webp" alt="Robot" width="30" height="30" /></strong></h1>
   <p>Reverse Image Search Telegram Bot Using MS Azure/Local (server maybe off)
-  <p>
-    <img src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=social"/>
-    <img src="https://img.shields.io/github/forks/c0sm0void/ReVot?style=social"/>
-    <img src="https://img.shields.io/github/watchers/c0sm0void/ReVot?style=social"/>
-  <p>
-    <div align="center">
-  <a href="https://github.com/c0sm0void/ReVot/issues">
-    <img src="https://img.shields.io/github/issues/c0sm0void/ReVot?style=for-the-badge&color=FF6347&label=Issues&logo=github" alt="GitHub Issues"/>
-  </a>
-  <a href="https://github.com/c0sm0void/ReVot/pulls">
-    <img src="https://img.shields.io/github/issues-pr/c0sm0void/ReVot?style=for-the-badge&color=98FF98&label=Pull%20Requests&logo=github" alt="GitHub Pull Requests"/>
-  </a>
-  <a href="https://github.com/c0sm0void/ReVot/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/c0sm0void/ReVot?style=for-the-badge&color=c9cbff&label=Contributors&logo=github" alt="GitHub Contributors"/>
-  </a>
-  <a href="https://t.me/ReVot_Local_Bot">
-    <img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/>
-  </a>
+ 
+  <table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>🌟 Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b>🐛 Issues</b></td>
+            <td><b>🔔 Open PRs</b></td>
+            <td><b>🔕 Close PRs</b></td>
+            <td><b>🛠 Languages</b></td>
+            <td><b>🌐 Contributors </b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/c0sm0void/ReVot?style=flat&logo=github"/></td>
+            <td><img alt="Forks" src="https://img.shields.io/github/forks/c0sm0void/ReVot?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/c0sm0void/ReVot?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/c0sm0void/ReVot?style=flat&logo=github"/></td>
+           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/c0sm0void/ReVot?style=flat&color=critical&logo=github"/></td>
+           <td><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/c0sm0void/ReVot?style=flat&color=critical&logo=github"></td>
+           <td><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/c0sm0void/ReVot?color=2b9348"></td>
+        </tr>
+    </tbody>
+</table>
 </div>
+<br>
+
 
   <p>
     <img src="http://forthebadge.com/images/badges/made-with-python.svg"/>
     <img src="http://forthebadge.com/images/badges/license-mit.svg"/>
-  <p>
-    <img src="https://badgen.net/badge/icon/azure?icon=azure&label">
-    <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">
-    <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label">
-    <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
-    <img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green">
+    <a href="https://t.me/ReVot_Local_Bot">
+    <img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/>
+    </a>
+ <table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>☁️ Cloud</b></td>
+            <td><b>🐧 OS</b></td>
+            <td><b>💻 Terminal</b></td>
+            <td><b>📦 PyPI</b></td>
+            <td><b>❤️ Open Source</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img src="https://badgen.net/badge/icon/azure?icon=azure&label"></td>
+            <td><img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a"></td>
+            <td><img src="https://badgen.net/badge/icon/terminal?icon=terminal&label"></td>
+            <td><img src="https://badgen.net/badge/icon/pypi?icon=pypi&label"></td>
+            <td><img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green"></td>
+        </tr>
+    </tbody>
+</table>
 </div>
 
 ---

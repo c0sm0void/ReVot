@@ -37,12 +37,26 @@
     <a href="https://t.me/ReVot_Local_Bot">
     <img src="https://img.shields.io/badge/Telegram%20ReVot%20Bot-blue?style=for-the-badge&logo=telegram&color=302d41&logoColor=0088CC" alt="Contact"/>
     </a>
-  <p>
-    <img src="https://badgen.net/badge/icon/azure?icon=azure&label">
-    <img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a">
-    <img src="https://badgen.net/badge/icon/terminal?icon=terminal&label">
-    <img src="https://badgen.net/badge/icon/pypi?icon=pypi&label">
-    <img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green">
+ <table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>☁️ Cloud</b></td>
+            <td><b>🐧 OS</b></td>
+            <td><b>💻 Terminal</b></td>
+            <td><b>📦 PyPI</b></td>
+            <td><b>❤️ Open Source</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img src="https://badgen.net/badge/icon/azure?icon=azure&label"></td>
+            <td><img src="https://img.shields.io/badge/OS-Linux-informational?style=flat&logo=linux&logoColor=white&color=2bbc8a"></td>
+            <td><img src="https://badgen.net/badge/icon/terminal?icon=terminal&label"></td>
+            <td><img src="https://badgen.net/badge/icon/pypi?icon=pypi&label"></td>
+            <td><img src="https://img.shields.io/badge/open%20source-%E2%9D%A4%EF%B8%8F-green"></td>
+        </tr>
+    </tbody>
+</table>
 </div>
 
 ---

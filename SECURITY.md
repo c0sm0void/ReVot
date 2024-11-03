@@ -3,13 +3,13 @@ Supported Versions
 The following versions of Revot are currently supported with security updates:
 
 Version	Supported
-1.0.0	✅ Supported
+3.12.0	✅ Supported
 0.x.x	❌ Not supported
 Reporting a Vulnerability
 If you discover a security vulnerability in Revot, we encourage you to report it as soon as possible. We will investigate all legitimate reports and do our best to quickly fix the issue.
 
 # How to Report
-Please report vulnerabilities by emailing us at prashantandoriya@gmail.com. Include as much detail as possible to help us identify and fix the issue swiftly.
+Please report vulnerabilities by emailing us at minhajulhossain@gmail.com Include as much detail as possible to help us identify and fix the issue swiftly.
 Do not share the vulnerability publicly until it has been addressed and a patch is available.
 Security Updates
 We will notify users via GitHub releases for any critical security updates.

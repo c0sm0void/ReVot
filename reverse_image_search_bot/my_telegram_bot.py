@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 search_history = {}
 
 # Replace with your bot's token from BotFather
-TOKEN = "7864771886:AAHLNiGFdkhP38jHvqZifn9QRpc0OXQOg-k"
+TOKEN = "You API key"
 
 # Start command: Welcomes the user and explains the bot's functionality
 def start(update: Update, context: CallbackContext):
